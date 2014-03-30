@@ -16,6 +16,11 @@ public class LogicTable implements EntryPoint {
      * This is the entry point method.
      */
     public void onModuleLoad() {
+        TextBox functionEdit = new TextBox();
+        functionEdit.setText("A | B"); // For example function is "A or B"
+        RootPanel.get("functionSlot").add(functionEdit);
+
+
         final Button button = new Button("Click me");
         final Label label = new Label();
 
